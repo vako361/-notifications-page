@@ -1,0 +1,66 @@
+.username{
+    color: var(--3---Very-Dark-Grey-Blue, #1C202B);
+    font-feature-settings: 'liga' off, 'clig' off;
+  
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .userpic{
+    margin-left: 20%;
+    width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  }
+  .post{
+    color: var(--4---Dark-Grey-Blue, #5E6778);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .group-name{
+    color: var(--1---Blue, #0A327B);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+    font-weight: 800;
+  
+  }
+  .time{
+    color: var(--5---Grey-Blue, #939CAD);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .action{
+    color: var(--4---Dark-Grey-Blue, #5E6778);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+  }
+  .sections:hover{
+    cursor: pointer;
+  }
+  .sections{
+    display: flex;
+    flex-direction: row;
+    width: 670px;
+    height: 80px;
+    background: var(--9---White, #FFF);
+    border-radius: 8px;
+    background: #F7FAFD;
+    gap: 7px;
+  }
+  .sections img{
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}

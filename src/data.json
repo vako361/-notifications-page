@@ -21,7 +21,7 @@
       "username": "Jacob Thompson",
       "profilePic": "/images/avatar-jacob-thompson.webp",
       "action": " has joined your group",
-      "groupName": "Chess Club",
+      "groupName": " Chess Club",
       "time": "1 day ago",
       "isRead": false
     },
@@ -57,7 +57,7 @@
       "username": "Anna Kim",
       "profilePic": "/images/avatar-angela-gray.webp",
       "action": "left the group",
-      "groupName": "Chess Club",
+      "groupName": " Chess Club",
       "time": "2 weeks ago",
       "isRead": true
     }

@@ -1,27 +1,41 @@
 import data from "./data.json"
 import { useState } from "react"
 import './App.css'
-
+import Notification from "./components/notification/Notification"
+import Header from "./components/header/header"
+const count = data.filter((item) => !item.isRead).length; // Ensure count is defined within the component
 function App() {
-  const [notification, setNotification] = useState(data)
+ 
 
+  const [notification, setNotification] = useState(data)
+  const markAll = () => {
+    const updatedNotification = notification.map((item) => ({
+      ...item,
+      isRead: true,
+    }));
+    setNotification(updatedNotification);
+  };
+  const count = notification.filter((item) => !item.isRead).length; // Ensure count is defined within the component
+  const updateValue = (id) => { 
+    const updatedNotification = notification.map((item) => {
+      if (item.id === id) {
+        return { ...item, isRead: true }
+      }
+      return item
+    })
+ 
+    setNotification(updatedNotification)
+      
+  }
   return (
     <>
-    <section className="header"> 
-      <h2>Notifications <span>3</span></h2> 
-      <span className="mark-all">Mark all as read</span>
-    </section>
+
     <main>
+     <Header count={count} markAll={markAll} />
       {notification.map((notification) => {
         return(
-        <div className="" key={notification.id}>
-         <img src={notification.profilePic}/>
-         <span>{notification.username}</span>
-         <span>{notification.action}</span>
-         {notification.groupName ? <span>{notification.groupName}</span>:null}
-         {notification.post ? <span>{notification.post}</span>: null}
-         {notification.userPicture ? <img src={notification.userPicture}/>: null}
-        </div>)
+         <Notification key={notification.id} notification={notification} updateValue={updateValue} />
+        )
       } )}
     </main>
     </>
