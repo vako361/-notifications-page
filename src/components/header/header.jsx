@@ -1,4 +1,4 @@
-import "./header.css";
+import "./Header.css";
 export default function header({ count, markAll }) {
 return(
     <section className="header"> 

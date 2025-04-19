@@ -37,3 +37,19 @@ h2{
     justify-content: space-between;
      margin: 31px;
   }
+  @media screen and (max-width: 600px) {
+    .header{
+        width: 375px;
+        justify-content: center;
+        align-items: center;
+        gap: 74px;
+      
+    }
+  h2{
+    font-size: 20px;
+  }
+  h2 span{
+    font-size: 14px;
+  }
+ 
+  }
